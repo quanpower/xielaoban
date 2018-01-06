@@ -245,7 +245,7 @@ def configure_error_handlers(app):
 def configure_admin(app):
     # flask-admin
     from application.controllers.admin.dashboard import IndexView
-    admin.name = u"Maybi后台"
+    admin.name = "xielaoban admin"
     admin.base_template = 'admin/master2.html'
     admin.template_mode = 'bootstrap3'
     admin.init_app(app)
