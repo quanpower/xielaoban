@@ -28,7 +28,7 @@ class SocialOAuth(db.Document):
     expire_date = db.DateTimeField()
     refresh_token = db.StringField()
 
-    # wether we can get information of this oauth
+    # whether we can get information of this oauth
     can_refresh = db.BooleanField(default=True)
 
     last_active_date = db.DateTimeField()
