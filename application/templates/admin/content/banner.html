@@ -1,11 +1,13 @@
 {% extends 'admin/master2.html' %}
+
+
 {% block head_css %}
 {{ super() }}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-datetimepicker.min.css') }}">
 {% endblock %}
 
-{% block body %}
 
+{% block body %}
 <div class="row">
     <div class="col-lg-12">
         <div class="pull-right">
@@ -81,6 +83,8 @@
 
 
 {% endblock %}
+
+
 {% block tail_js %}
 {{ super() }}
 <script src="{{ url_for('static', filename='js/admin/dragorder.js') }}"></script>
